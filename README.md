@@ -1,5 +1,5 @@
 # HomeHub
-![HomeHub](https://github.com/chrisdanielwise/Webstack-Portfolio-Project/blob/main/welcome.png)
+![homehub](https://github.com/chrisdanielwise/Webstack-Portfolio-Project/blob/main/welcome.png)
 
 `Group project` `Web Portfolio project`
 
