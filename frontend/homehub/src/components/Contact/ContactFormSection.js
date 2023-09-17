@@ -38,30 +38,30 @@ function ContactFormSection() {
           <div className="bg-zinc-800 w-90% rounded-[50px] rounded-tr-none p-8 text-left min-w-[400px] max-w-[500px]">
             <form onSubmit={handleSubmit} action="" method="">
               <div>
-                <h5 className="font-thin pb-4 text-5xl">Get In Touch</h5>
-                <p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur</p>
+                <h5 className="font-thin pb-4 text-5xl text-[#74c69d]">Get In Touch</h5>
+                <p className="text-[#fff]">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur</p>
               </div>
 
               <div>
-                <label className="">Full Name</label>
+                <label className="text-[#74c69d]">Full Name</label>
                 <input className="formInput" type="text" name="name" onChange={handleInputChange} value={inputs.name} placeholder="Enter full name" required />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label>Email Address</label>
+                  <label className="text-[#74c69d]">Email Address</label>
                   <input className="formInput" type="email" name="email" onChange={handleInputChange} value={inputs.email} placeholder="email@email.com" required />
                 </div>
                 <div>
-                  <label>Phone Number</label>
+                  <label className="text-[#74c69d]">Phone Number</label>
                   <input className="formInput" type="number" name="phoneNumber" onChange={handleInputChange} placeholder="Enter Phone number" value={inputs.phoneNumber} required />
                 </div>
               </div>
               <div>
-                <label>Message</label>
+                <label className="text-[#74c69d]">Message</label>
                 <textarea className="formInput h-[100px]" type="textarea" name="message" onChange={handleInputChange} placeholder="" value={inputs.message} required />
               </div>
               <div className="mx-auto text-center text-xl">
-                <button type="submit" className="px-8 py-4">
+                <button type="submit" className="bg-[#74c69d] hover:bg-[#5a8e71] ">
                   Submit
                 </button>
               </div>
@@ -69,7 +69,7 @@ function ContactFormSection() {
           </div>
         </div>
         <div className="min-w-[300px] max-w-[500px]">
-          <div className="px-6">
+          <div className="px-6 bg-zinc-800 text-[#74c69d]">
             <h4>FAQ</h4>
             <p className="">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <div className="pl-2 text-l">

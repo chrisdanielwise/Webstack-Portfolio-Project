@@ -7,7 +7,7 @@ const FeaturedProperty = ({ items, text, header }) => {
       <div className="container">
         {/* section label */}
         <div className="py-10">
-          <h3 className="text-purple-700"> {header} </h3>
+          <h3 className="text-[000]"> {header} </h3>
           <h5 className="pt-4"> {text} </h5>
         </div>
 

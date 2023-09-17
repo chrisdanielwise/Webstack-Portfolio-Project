@@ -12,7 +12,7 @@ function NavLinks({ auth, handleLogout }) {
         to="/"
         className={({ isActive }) =>
           isActive
-            ? "text-purple-500 block p-3 text-lg navlink"
+            ? "text-[#74c69d] block p-3 text-lg navlink"
             : "block p-3 text-lg navlink"
         }
       >
@@ -22,7 +22,7 @@ function NavLinks({ auth, handleLogout }) {
         to="/about"
         className={({ isActive }) =>
           isActive
-            ? "text-purple-500 block p-3 text-lg navlink"
+            ? "text-blue-500 block p-3 text-lg navlink"
             : "block p-3 text-lg navlink"
         }
       >
@@ -32,7 +32,7 @@ function NavLinks({ auth, handleLogout }) {
         to="/property"
         className={({ isActive }) =>
           isActive
-            ? "text-purple-500 block p-3 text-lg navlink"
+            ? "text-[#74c69d] block p-3 text-lg navlink"
             : "block p-3 text-lg navlink"
         }
       >
@@ -42,7 +42,7 @@ function NavLinks({ auth, handleLogout }) {
         to="/agent"
         className={({ isActive }) =>
           isActive
-            ? "text-purple-500 block p-3 text-lg navlink"
+            ? "text-[#74c69d] block p-3 text-lg navlink"
             : "block p-3 text-lg navlink"
         }
       >
@@ -52,7 +52,7 @@ function NavLinks({ auth, handleLogout }) {
         to="/contact"
         className={({ isActive }) =>
           isActive
-            ? "text-purple-500 block p-3 text-lg navlink"
+            ? "text-blue-500 block p-3 text-lg navlink"
             : "block p-3 text-lg navlink"
         }
       >
@@ -62,13 +62,13 @@ function NavLinks({ auth, handleLogout }) {
         to="/blog"
         className={({ isActive }) =>
           isActive
-            ? "text-purple-500 block p-3 text-lg navlink"
+            ? "text-[#74c69d] block p-3 text-lg navlink"
             : "block p-3 text-lg navlink"
         }
       >
         Blog
       </NavLink>
-      <button className="">
+      <button className="bg-[#74c69d] hover:bg-[#5a8e71]">
         {!auth.user ? (
           <NavLink to="/userForm">Get Started</NavLink>
         ) : (
@@ -76,13 +76,15 @@ function NavLinks({ auth, handleLogout }) {
         )}
       </button>
       {auth.user ? (
-        <div className="block p-3 text-lg navlink" onClick={handleLogout}>
+        <div className="block p-3 text-lg navlink text-gray-300" onClick={handleLogout}>
           Logout
         </div>
       ) : null}
     </nav>
   );
 }
+
+
 
 function Header() {
   const auth = useAuth();
@@ -99,7 +101,7 @@ function Header() {
   };
 
   return (
-    <div className="Header bg-zinc-900 w-full">
+    <div className="Header bg-[#29434e] text-[#FFFFFF] w-full">
       <div className="max-w-[1440px] mx-auto py-6 px-10 flex justify-between">
         <div>
           <NavLink to="/">

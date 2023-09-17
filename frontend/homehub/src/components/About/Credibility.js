@@ -8,7 +8,7 @@ const Credibility = (props) => {
     <div className="Credibility w-full max-w-[1440px] my-20 ">
       {/* section label */}
       <div className="pb-6 text-center">
-        <h3 className="text-purple-700"> {props.header} </h3>
+        <h3 className="text-[#74c69d]"> {props.header} </h3>
         <h5 className="pt-4"> {props.text} </h5>
       </div>
 
@@ -20,10 +20,10 @@ const Credibility = (props) => {
                 <VscWorkspaceTrusted />
               </p>
             </div>
-            <h5 className=" text-purple-500 text-[20px] ">
+            <h5 className=" text-[#74c69d] text-[20px] ">
               Transparent Pricing
             </h5>
-            <p className="text-[18px]">
+            <p className="text-[18px] text-[#fff]">
               See firxed prices before you book. No hidden charges.
             </p>
           </div>
@@ -36,8 +36,8 @@ const Credibility = (props) => {
                 <GrUserExpert />
               </div>
             </div>
-            <h5 className=" text-purple-500 text-[20px] ">Experts Only</h5>
-            <p className="text-[18px]">
+            <h5 className=" text-[#74c69d] text-[20px] ">Experts Only</h5>
+            <p className="text-[18px] text-[#fff]">
               Our professionals are well trained and have on-job expertise.
             </p>
           </div>
@@ -50,8 +50,8 @@ const Credibility = (props) => {
                 <FaToolbox />
               </p>
             </div>
-            <h5 className=" text-purple-500 text-[20px] ">Fully Equiped</h5>
-            <p className="text-[18px]">
+            <h5 className=" text-[#74c69d] text-[20px] ">Fully Equiped</h5>
+            <p className="text-[18px] text-[#fff]">
               We bring everything needed to get the job done well.
             </p>
           </div>
@@ -64,8 +64,8 @@ const Credibility = (props) => {
                 <FaClock />
               </p>
             </div>
-            <h5 className=" text-purple-500 text-[20px] ">Timely Delivery</h5>
-            <p className="text-[18px]">
+            <h5 className=" text-[#74c69d] text-[20px] ">Timely Delivery</h5>
+            <p className="text-[18px] text-[#fff]">
               We create and deliver opportunities within time and budget.
             </p>
           </div>

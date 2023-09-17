@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer w-full rounded-t-[90px] md:rounded-t-[120px] bg-purple-900">
+    <div className="footer w-full rounded-t-[90px] md:rounded-t-[120px] bg-[#29434e] text-[#EAEAEA]">
       <div className="max-w-[1440px] mx-auto pt-10 md:pt-20 pb-5 px-10 md:px-20 text-center md:text-left md:grid grid-cols-4 gap-20">
         {/* footer header */}
         <div className="col-span-2 pt-10 md:pt-0">
@@ -14,7 +14,7 @@ function Footer() {
           <div className="md:pr-10">
             <form className="relative pb-4" method="Post" action="">
               <input type={"email"} value={""} className="email rounded-full py-4 px-6 w-full text-black outline-0" placeholder="Enter email" />
-              <button className="absolute right-0 rounded-full rounded-l-none py-4 px-6 bg-purple-500 hover:bg-purple-700">Subscribe</button>
+              <button className="absolute right-0 rounded-full rounded-l-none py-4 px-6 bg-[#74c69d] hover:bg-[#5a8e71] ">Subscribe</button>
             </form>
           </div>
           <div className="flex flex-row md:flex-row justify-between py-4 items-center">
@@ -81,7 +81,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="text-center py-6 text-black text-xl">
+      <div className="text-center py-6  text-xl text-[#74c69d]">
         <p>Copyright HomeHub 2023</p>
       </div>
     </div>

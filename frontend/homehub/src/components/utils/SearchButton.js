@@ -27,7 +27,7 @@ const SearchButton = (props) => {
         <input onChange={handleInputChange} type={"text"} value={country} className="country rounded-full py-4 px-6 w-full text-black outline-0" placeholder="Enter Country" />
 
         {/*you can replace with search icon */}
-        <button onClick={handleSubmit} className="absolute right-0 rounded-full py-4 px-6 bg-pink-700 hover:bg-purple-700">
+        <button onClick={handleSubmit} className="absolute right-0 rounded-full py-4 px-6  bg-[#74c69d] hover:bg-[#5a8e71]">
           Search
         </button>
       </form>

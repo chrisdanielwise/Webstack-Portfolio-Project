@@ -6,7 +6,7 @@ import HiOutlineMail from "react-icons/hi";
 
 function ContactDetails() {
   return (
-    <div className="bg-zinc-800 mt-20 py-40">
+    <div className="bg-zinc-800 mt-20 py-40 text-[#fff]">
       <div className="ContactDetails flex justify-center max-w-[1440px] w-full ">
         <div className="flex flex-col justify-center  px-10 md:px-16  sm:grid sm:grid-cols-2  lg:grid-cols-4 gap-10 divide-x">
           <div className="text-center">

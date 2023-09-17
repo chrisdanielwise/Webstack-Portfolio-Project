@@ -10,7 +10,7 @@ const MoreProperty = (props) => {
       <div className="max-w-[1440px] mx-auto py-4 px-10 flex-col justify-between text-center md:flex-row">
         {/* section label */}
         <div className="py-10">
-          <h3 className="text-purple-700">
+          <h3 className="text-[#74c69d]">
             {props.header} {items.header}{" "}
           </h3>
           <h5 className="pt-2">

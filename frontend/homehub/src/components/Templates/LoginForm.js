@@ -62,13 +62,13 @@ const LoginForm = () => {
           <div className="w-[400px] ">
             <div className="grid grid-cols-2  mb-4 align-middle">
               <div
-                className="bg-zinc-900 flex justify-center align-middle py-4"
+                className="bg-zinc-900 flex justify-center align-middle py-4 text-[#74c69d]"
                 onClick={() => navigate("/userForm")}
               >
                 Sign up
               </div>
               <div
-                className="bg-zinc-800 flex justify-center align-middle py-4"
+                className="bg-zinc-800 flex justify-center align-middle py-4 text-[#74c69d]"
                 onClick={() => navigate("/loginForm")}
               >
                 Login
@@ -100,7 +100,7 @@ const LoginForm = () => {
             </div>
 
             <div className="mx-auto text-left text-xl">
-              <button type="submit button" className="px-10 py-4">
+              <button type="submit button" className="px-10 py-4 bg-[#74c69d] hover:bg-[#5a8e71]">
                 Submit
               </button>
             </div>

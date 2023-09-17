@@ -12,7 +12,7 @@ const ExpertSection = (props) => {
       <div className="max-w-[1440px] mx-auto py-20 px-10 flex-col justify-between text-center md:flex-row">
         {/* section label */}
         <div className="py-10">
-          <h3 className="text-purple-700"> {props.header} </h3>
+          <h3 className="text-[#74c69d]"> {props.header} </h3>
           <h5 className="pt-4"> {props.text} </h5>
         </div>
 
@@ -32,8 +32,8 @@ const ExpertSection = (props) => {
           </div>
         </div>
         <div className="w-full pt-10 flex justify-center">
-          <button className="mx-4">Load More</button>
-          <button className="mx-4">
+          <button className="mx-4 bg-[#74c69d] hover:bg-[#5a8e71]">Load More</button>
+          <button className="mx-4 bg-[#74c69d] hover:bg-[#5a8e71]">
             <NavLink className="" to="/AgentForm">
               Become Agent
             </NavLink>

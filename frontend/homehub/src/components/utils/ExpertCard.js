@@ -11,9 +11,9 @@ const ExpertCard = (props) => {
       </div>
 
       <div className=" pb-4  cursor-pointer flex justify-between align-middle pt-2 px-8">
-        <p>{props.name}</p>
-        <button className="py-2 px-4">
-          <NavLink className="text-l" to="/agentDashboard">
+        <p className="text-[#fff]">{props.name}</p>
+        <button className="py-2 px-4 bg-[#74c69d] hover:bg-[#5a8e71]">
+          <NavLink className="text-l " to="/agentDashboard">
             View
           </NavLink>
         </button>

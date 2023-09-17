@@ -32,7 +32,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-black  text-white flex">
+      <section className="bg-[#29434e]  text-white flex">
         <div className="max-w-[1440px] mx-auto py-5 px-10  md:flex justify-between">
           <Service
             label="About Us"
@@ -42,20 +42,20 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-black text-white">
+      <section className="bg-[#EAEAEA] text-black">
       <FeaturedProperty header="Featured Properties" text="Check Out The top rated Properties around the World " items={items} />
       </section>
-      <section className="bg-black  text-white">
+      <section className="bg-[#29434e]  text-white border-y-2 border-[#262829]">
         <div className="text-center pt-20">
-          <h3 className="text-purple-700 text-2xl">How it Works</h3>
-          <p className="mb-12">Confidence in Collaboration</p>
+          <h3 className="text-[#74c69d] text-2xl">How it Works</h3>
+          <p className="mb-12 text-[#74c69d]">Confidence in Collaboration</p>
         </div>
         <Works />
       </section>
-      <section className="bg-black text-white">
-        <div className="text-center pt-20">
-          <h3 className="text-purple-700 text-2xl">Meet an Agent</h3>
-          <p>Do you prefer to get advice from an Agent?</p>
+      <section className="bg-[#29434e] text-white">
+        <div className="text-center pt-20 text-[#74c69d]">
+          <h3 className=" text-2xl ">Meet an Agent</h3>
+          <p >Do you prefer to get advice from an Agent?</p>
           <p>Now you meet them across the world.</p>
         </div>
         <ExpertSection />
@@ -68,7 +68,7 @@ function Home() {
         <Partners />
       </section>
       <section className="bg-black  text-center pt-16">
-        <h3 className="text-purple-700 text-2xl ">Have a Question?</h3>
+        <h3 className="text-blue-700 text-2xl ">Have a Question?</h3>
         <p className="mb-20 text-white">Let us help you.</p>
         <Footer />
       </section>
