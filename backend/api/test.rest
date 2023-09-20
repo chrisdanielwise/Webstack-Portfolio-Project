@@ -1,0 +1,11 @@
+###
+
+POST http://localhost:8800/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "admin2@gmail.com",
+  "username": "Admin2",
+  "password": "youhavebeenhacked",
+  "isAdmin": true
+}

@@ -4,41 +4,63 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const baseUrl = "http://127.0.0.1:5000";
+const baseUrl = "http://localhost:8800/api/auth";
 
 const SignupForm = () => {
   const navigate = useNavigate();
 
   const [inputs, setInputs] = useState({
+    email: "",
     username: "",
     password: "",
-    email: "",
     repeatPassword: "",
+    isAdmin:false
   });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inputs.password === inputs.repeatPassword) {
-      const data = await axios.post(`${baseUrl}/signup`, {
-        username: inputs.username,
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+  
+      const data = {
         email: inputs.email,
+        username: inputs.username,
         password: inputs.password,
-      });
-      const success = data.data.success;
-      console.log("DATA: ", data.data.success);
-
-      success ? navigate("/loginForm", { replace: true }) : alert("Try again");
+        isAdmin:false
+      };
+  
+      try {
+        const response = await axios.post(`${baseUrl}/register`,JSON.stringify(data), config);
+  
+        if (response.status === 201) {
+          // Registration successful
+          navigate("/loginForm", { replace: true });
+          alert("Registration Succeful");
+        } else {
+          // Handle other responses as needed
+          alert("Registration failed. Please try again.");
+        }
+      } catch (error) {
+        // Handle errors, including validation errors, here
+        console.error("Registration error:", error);
+        alert("Registration failed. Please check your input data.");
+      }
     } else {
-      alert("password does not match");
-      setInputs({
-        username: inputs.username,
-        email: inputs.email,
+      alert("Passwords do not match");
+      setInputs((prevInputs) => ({
+        ...prevInputs,
         password: "",
-        rePassword: "",
-      });
+        repeatPassword: "",
+      }));
     }
   };
-
+  
+  
+  
   const handleInputChange = (event) => {
     event.persist();
     const { name, value } = event.target;
@@ -125,7 +147,7 @@ const SignupForm = () => {
             <div className="mx-auto text-left text-xl">
               {/* <button onClick={NavigateToLoginForm}>Submit</button> */}
               {/* <button onClick={navigateToHome} cl></button> */}
-              <button className=" bg-[#74c69d] hover:bg-[#5a8e71]">Submit</button>
+              <button type="submit" className=" bg-[#74c69d] hover:bg-[#d3f2e1]">Submit</button>
             </div>
           </div>
         </div>

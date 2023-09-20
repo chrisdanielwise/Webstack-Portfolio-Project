@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useAuth } from "../../commons/auth";
 
-const baseUrl = "http://127.0.0.1:5000";
+const baseUrl = "http://localhost:8800/api/auth";
 
 const LoginForm = () => {
   // authentication
@@ -13,32 +13,58 @@ const LoginForm = () => {
   const navigate = useNavigate();
   // implementing state and hooks
   const [inputs, setInputs] = useState({
-    password: "",
     email: "",
+    password: "",
+    isAdmin: false,
   });
+
+  const [welcomeMessage, setWelcomeMessage] = useState("");
+  const [errors, setErrors] = useState({ message: "" });
 
   const handleSubmit = async (event) => {
     if (event) {
       event.preventDefault();
 
-      const data = await axios.post(`${baseUrl}/login`, {
-        password: inputs.password,
-        email: inputs.email,
-      });
-      console.log("DATA", data.data);
-      const { isLogin, feedback } = data.data;
-
-      if (isLogin) {
-        auth.login(feedback.username);
-        navigate("/", { replace: true });
-        alert(`welcome ${feedback.username}`);
-      } else {
-        alert(feedback);
+      // Check if email and password are provided
+      if (!inputs.email || !inputs.password) {
+        alert("Email and password are required.");
+        return;
       }
-      setInputs({
-        password: "",
-        email: "",
-      });
+
+      // Display loading feedback
+      // You can set a loading state variable and conditionally render a spinner
+
+      try {
+        const response = await axios.post(`${baseUrl}/login`, {
+          email: inputs.email,
+          password: inputs.password,
+          isAdmin: inputs.isAdmin,
+        });
+
+        const { accessToken, username } = response.data;
+
+        if (accessToken) {
+          // Update welcome message
+          setWelcomeMessage(`Welcome, ${username}!`);
+          // Authenticate the user and navigate to the home page
+          auth.login(username);
+          navigate("/", { replace: true });
+        } else {
+          // Handle login failure feedback
+          console.log(username);
+          setErrors({ message: username });
+        }
+
+        // Clear the form inputs
+        setInputs({
+          password: "",
+          email: "",
+        });
+      } catch (error) {
+        // Handle network errors or other exceptions
+        console.error("Login error:", error);
+        alert("Login failed. Please try again later.");
+      }
     }
   };
 
@@ -100,13 +126,16 @@ const LoginForm = () => {
             </div>
 
             <div className="mx-auto text-left text-xl">
-              <button type="submit button" className="px-10 py-4 bg-[#74c69d] hover:bg-[#5a8e71]">
+              <button type="submit" className="px-10 py-4 bg-[#74c69d] hover:bg-[#5a8e71]">
                 Submit
               </button>
             </div>
           </div>
         </div>
       </form>
+
+      {welcomeMessage && <div>{welcomeMessage}</div>}
+      {errors.message && <div>{errors.message}</div>}
 
       <Footer />
     </div>

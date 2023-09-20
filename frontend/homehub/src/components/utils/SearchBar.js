@@ -16,7 +16,7 @@ const SearchBar = (props) => {
                 Location
               </option>
               <option value="" className="">
-                South Africa
+                Cameron
               </option>
               <option value="" className="">
                 Nigeria
@@ -25,7 +25,7 @@ const SearchBar = (props) => {
                 Ghana
               </option>
               <option value="" className="">
-                Kenya
+                Niger2
               </option>
             </select>
           </div>

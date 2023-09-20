@@ -58,7 +58,7 @@ function NavLinks({ auth, handleLogout }) {
       >
         Contact
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/blog"
         className={({ isActive }) =>
           isActive
@@ -67,7 +67,7 @@ function NavLinks({ auth, handleLogout }) {
         }
       >
         Blog
-      </NavLink>
+      </NavLink> */}
       <button className="bg-[#74c69d] hover:bg-[#5a8e71]">
         {!auth.user ? (
           <NavLink to="/userForm">Get Started</NavLink>
