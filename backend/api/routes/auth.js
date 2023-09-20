@@ -61,6 +61,7 @@ router.post("/login", async (req, res) => {
     };
 
     const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "72h" });
+    res.header('Access-Control-Allow-Origin', '*');
 
     const { password, ...userInfo } = user._doc;
     res.status(200).json({ ...userInfo, accessToken: token });

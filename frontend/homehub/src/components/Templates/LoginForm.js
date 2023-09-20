@@ -5,7 +5,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useAuth } from "../../commons/auth";
 
-const baseUrl = "http://localhost:8800/api/auth";
+// const baseUrl = "http://localhost:8800/api/auth";
+const baseUrl = "https://weak-lime-tick-tam.cyclic.cloud/api/auth"
 
 const LoginForm = () => {
   // authentication
