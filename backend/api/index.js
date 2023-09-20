@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: ["http://localhost:3000","https://webstack-portfolio-project-nine.vercel.app/"]
+    origin: "https://webstack-portfolio-project-nine.vercel.app"
   })
 );
 
