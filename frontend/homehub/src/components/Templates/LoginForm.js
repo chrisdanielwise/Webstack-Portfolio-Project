@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import { useAuth } from "../../commons/auth";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = "https://weak-lime-tick-tam.cyclic.cloud/api/auth"
+const baseUrl = process.env.BASE_URL
 
 const LoginForm = () => {
   // authentication
@@ -36,7 +36,7 @@ const LoginForm = () => {
       // You can set a loading state variable and conditionally render a spinner
 
       try {
-        const response = await axios.post(`${baseUrl}/login`, {
+        const response = await axios.post(`${baseUrl}/auth/login`, {
           email: inputs.email,
           password: inputs.password,
           isAdmin: inputs.isAdmin,
@@ -64,7 +64,8 @@ const LoginForm = () => {
       } catch (error) {
         // Handle network errors or other exceptions
         console.error("Login error:", error);
-        alert("Login failed. Please try again later.");
+        // alert("Login failed. Please try again later.");
+        navigate("/", { replace: true });
       }
     }
   };

@@ -4,8 +4,8 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const baseUrl = "http://localhost:8800/api/auth";
-// const baseUrl = process.env.BASE_URL
+// const baseUrl = "http://localhost:8800/api/auth";
+const baseUrl = process.env.BASE_URL
 const SignupForm = () => {
   const navigate = useNavigate();
 
