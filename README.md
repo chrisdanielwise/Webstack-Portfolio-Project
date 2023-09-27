@@ -3,7 +3,7 @@
 
  `Web Portfolio project`
 
-> HomeHub is a Property management web app that helps people to rent or buy property at any part of the World. We are using Rapid API to list the available houses, With Agents to facilitate the process. 
+> HomeHub is a Property management web app that helps people to rent or buy property within West Africa. I am using Rapid API to list the available houses, With Agents to facilitate the process. 
 
 
 ### Task - Full Stack webstack portfolio project(HomeHub)
