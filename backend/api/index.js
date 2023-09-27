@@ -8,7 +8,7 @@ const userRoute = require("./routes/users");
 const agentsRoute = require("./routes/agents");
 const propertiesRoute = require("./routes/properties");
 
-const port = process.env.PORT || 8800; // Use the PORT environment variable if available
+const port = process.env.BASE_URL || 8800; // Use the PORT environment variable if available
 
 dotenv.config();
 mongoose.set("strictQuery", false);

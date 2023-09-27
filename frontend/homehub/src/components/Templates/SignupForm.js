@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = process.env.BASE_URL
+const baseUrl = process.env.BASE_URL || 3000
 const SignupForm = () => {
   const navigate = useNavigate();
 
@@ -34,7 +34,7 @@ const SignupForm = () => {
       };
   
       try {
-        const response = await axios.post(`${baseUrl}/auth/register`,JSON.stringify(data), config);
+        const response = await axios.post(`${baseUrl}/register`,JSON.stringify(data), config);
   
         if (response.status === 201) {
           // Registration successful
