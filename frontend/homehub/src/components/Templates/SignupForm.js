@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = process.env.BASE_URL || "http://localhost:8800/api"
+const baseUrl = process.env.BASE_URL
 
 console.log(baseUrl,"baseUrl")
 
