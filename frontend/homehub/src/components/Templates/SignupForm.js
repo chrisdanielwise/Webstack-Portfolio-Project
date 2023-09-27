@@ -34,7 +34,7 @@ const SignupForm = () => {
       };
   
       try {
-        const response = await axios.post(`${baseUrl}/register`,JSON.stringify(data), config);
+        const response = await axios.post(`${baseUrl}/auth/register`,JSON.stringify(data), config);
   
         if (response.status === 201) {
           // Registration successful
