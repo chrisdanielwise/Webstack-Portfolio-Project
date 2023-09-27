@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = process.env.BASE_URL || 3000
+const baseUrl = process.env.BASE_URL || "http://localhost:8800/api"
 const SignupForm = () => {
   const navigate = useNavigate();
 
