@@ -16,7 +16,7 @@ const SignupForm = () => {
     repeatPassword: "",
     isAdmin:false
   });
-
+console.log(baseUrl,"baseUrl")
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inputs.password === inputs.repeatPassword) {
