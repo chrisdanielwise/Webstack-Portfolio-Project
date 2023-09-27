@@ -6,6 +6,9 @@ import Footer from "../Footer/Footer";
 
 // const baseUrl = "http://localhost:8800/api/auth";
 const baseUrl = process.env.BASE_URL || "http://localhost:8800/api"
+
+console.log(baseUrl,"baseUrl")
+
 const SignupForm = () => {
   const navigate = useNavigate();
 
@@ -16,7 +19,6 @@ const SignupForm = () => {
     repeatPassword: "",
     isAdmin:false
   });
-console.log(baseUrl,"baseUrl")
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inputs.password === inputs.repeatPassword) {
