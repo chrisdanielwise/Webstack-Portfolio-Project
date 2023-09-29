@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import { useAuth } from "../../commons/auth";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = process.env.REACT_APP_BASE_URL
+const baseUrl = process.env.REACT_APP_API_URL
 
 const LoginForm = () => {
   // authentication
