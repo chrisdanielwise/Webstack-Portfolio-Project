@@ -4,7 +4,6 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-// const baseUrl = "http://localhost:8800/api/auth";
 const baseUrl = process.env.REACT_APP_API_URL || 'https://weak-lime-tick-tam.cyclic.cloud/api';
 
 // console.log(baseUrl)

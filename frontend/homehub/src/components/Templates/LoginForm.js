@@ -5,7 +5,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useAuth } from "../../commons/auth";
 
-// const baseUrl = "http://localhost:8800/api/auth";
 const baseUrl = process.env.REACT_APP_API_URL || 'https://weak-lime-tick-tam.cyclic.cloud/api';
 
 // console.log(baseUrl,"base")
