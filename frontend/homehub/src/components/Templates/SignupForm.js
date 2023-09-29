@@ -5,9 +5,9 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = process.env.REACT_APP_API_URL
+const baseUrl = process.env.REACT_APP_API_URL || 'https://weak-lime-tick-tam.cyclic.cloud/api';
 
-alert(baseUrl)
+// console.log(baseUrl)
 
 const SignupForm = () => {
   const navigate = useNavigate();
