@@ -7,9 +7,7 @@ import Footer from "../Footer/Footer";
 // const baseUrl = "http://localhost:8800/api/auth";
 const baseUrl = process.env.REACT_APP_API_URL
 
-<div class="alert alert-primary" role="alert">
-  <strong>primary</strong>
-</div>(baseUrl)
+alert(baseUrl)
 
 const SignupForm = () => {
   const navigate = useNavigate();
