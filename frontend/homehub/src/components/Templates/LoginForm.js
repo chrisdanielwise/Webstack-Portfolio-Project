@@ -50,7 +50,7 @@ const LoginForm = () => {
           setWelcomeMessage(`Welcome, ${username}!`);
           // Authenticate the user and navigate to the home page
           auth.login(username);
-          navigate("/", { replace: true });
+          // navigate("/", { replace: true });
         } else {
           // Handle login failure feedback
           console.log(username);
