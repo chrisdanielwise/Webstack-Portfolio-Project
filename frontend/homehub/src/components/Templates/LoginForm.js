@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import { useAuth } from "../../commons/auth";
 
 // const baseUrl = "http://localhost:8800/api/auth";
-const baseUrl = process.env.BASE_URL
+const baseUrl = process.env.REACT_APP_BASE_URL
 
 const LoginForm = () => {
   // authentication
@@ -43,7 +43,7 @@ const LoginForm = () => {
         });
 
         const { accessToken, username } = response.data;
-
+        
         if (accessToken) {
           // Update welcome message
           setWelcomeMessage(`Welcome, ${username}!`);
@@ -63,9 +63,10 @@ const LoginForm = () => {
         });
       } catch (error) {
         // Handle network errors or other exceptions
+        console.log(baseUrl)
         console.error("Login error:", error);
         // alert("Login failed. Please try again later.");
-        navigate("/", { replace: true });
+         
       }
     }
   };
