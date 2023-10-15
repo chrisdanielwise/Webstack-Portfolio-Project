@@ -57,18 +57,18 @@ function Footer() {
               <NavLink className="pt-4 block text-base" to="/property">
                 <p className="text-l">View More Properties</p>
               </NavLink>
-              <NavLink className="pt-4 block text-base" to="/agent">
+              {/* <NavLink className="pt-4 block text-base" to="/agent">
                 <p className="text-l">Find An Agent</p>
-              </NavLink>
+              </NavLink> */}
               <NavLink className="pt-4 block text-base" to="/contact">
                 <p className="text-l">Let's Hear From You</p>
               </NavLink>
-              <NavLink className="pt-4 block text-base" to="/agentDashboard">
+              {/* <NavLink className="pt-4 block text-base" to="/agentDashboard">
                 <p className="text-l">Agent Dashboard</p>
-              </NavLink>
-              <NavLink className="pt-4 block text-base" to="/AgentForm">
+              </NavLink> */}
+              {/* <NavLink className="pt-4 block text-base" to="/AgentForm">
                 <p className="text-l">Become an Agent</p>
-              </NavLink>
+              </NavLink> */}
               <NavLink className="pt-4 block text-base" to="/loginForm">
                 <p className="text-l">Login</p>
               </NavLink>

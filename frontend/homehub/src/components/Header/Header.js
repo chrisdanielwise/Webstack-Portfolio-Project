@@ -38,7 +38,7 @@ function NavLinks({ auth, handleLogout }) {
       >
         Property
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/agent"
         className={({ isActive }) =>
           isActive
@@ -47,7 +47,7 @@ function NavLinks({ auth, handleLogout }) {
         }
       >
         Agent
-      </NavLink>
+      </NavLink> */}
       <NavLink
         to="/contact"
         className={({ isActive }) =>
