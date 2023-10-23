@@ -18,7 +18,7 @@ function Property() {
   return (
     <div className="Property">
       <Header />
-      <Hero header="Discover More suitable properties across the world" />
+      <Hero header="Discover More suitable properties in Shelter Africque Uyo" />
 
       <SearchBar />
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
