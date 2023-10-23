@@ -14,8 +14,7 @@ const port = process.env.PORT || 8800; // Use the PORT environment variable if a
 dotenv.config();
 mongoose.set("strictQuery", false);
 
-mongoose 
-  .connect(process.env.MONGO_URL, {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

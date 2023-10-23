@@ -26,7 +26,7 @@ function Home() {
               <p className="text-xl mb-10">Let's help you find a home that is perfect for you</p>
               <SearchButton />
             </div>
-            {<HeroImageBox p="Featured Homes" url ={items[0]?.url || Wallpaper}/>}
+            {<HeroImageBox p="Featured Property" url ={items[0]?.url || Wallpaper}/>}
             {/* <HeroImageBox p="Featured Homes" url ={false | require("../../assets/h2.jpg")}/> */}
           </div>
         </div>
@@ -37,7 +37,7 @@ function Home() {
           <Service
             label="About Us"
             header="We Provide The Best Property For You"
-            text="With our vast search tool, you can find yourr dream home from any location in the world. All we do is help you find the place, meet the agents, and seal the deal. There's no extra commission for our service."
+            text="With our vast search tool, you can find your dream home at Shelter Africque Estate in Uyo."
           />
         </div>
       </section>
@@ -54,9 +54,9 @@ function Home() {
       </section>
       <section className="bg-[#29434e] text-white">
         <div className="text-center pt-20 text-[#74c69d]">
-          <h3 className=" text-2xl ">Meet an Agent</h3>
-          <p >Do you prefer to get advice from an Agent?</p>
-          <p>Now you meet them across the world.</p>
+          <h3 className=" text-2xl ">Top Property Owners</h3>
+          <p >Do you prefer to get in touch with any of them</p>
+          <p>Now you meet them at your own comfort.</p>
         </div>
         <ExpertSection />
       </section>

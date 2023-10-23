@@ -15,7 +15,7 @@ const SearchBar = (props) => {
               <option value="" className="mr-6">
                 Location
               </option>
-              <option value="" className="">
+              {/* <option value="" className="">
                 Cameron
               </option>
               <option value="" className="">
@@ -26,7 +26,7 @@ const SearchBar = (props) => {
               </option>
               <option value="" className="">
                 Niger2
-              </option>
+              </option> */}
             </select>
           </div>
           <div className=" p-2">
@@ -56,10 +56,10 @@ const SearchBar = (props) => {
                 Max-Price
               </option>
               <option value="" className="">
-                $58,000
+                N 1,580,000
               </option>
               <option value="" className="">
-                $54,000
+                N 754,000
               </option>
             </select>
           </div>
