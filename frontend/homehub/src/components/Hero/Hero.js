@@ -17,7 +17,7 @@ const Hero = (props) => {
           </div>
 
           {/* HeroImageBox component */}
-          <HeroImageBox p="Abuja Nigeria" url={items[0]?.url || bg2} />
+          <HeroImageBox p="Shelter Africque Uyo" url={items[0]?.url || bg2} />
         </div>
       </div>
     </div>

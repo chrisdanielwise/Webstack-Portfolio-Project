@@ -23,28 +23,28 @@ function Property() {
       <SearchBar />
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2451/photos/3.jpg"}/>
+            <ExpertCard name="Eserne Udoaka Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2451/photos/3.jpg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/1739/photos/3.jpeg"}/>
+            <ExpertCard name="Ekukinam Bassey Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/1739/photos/3.jpeg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/199/photos/13.jpg"}/>
+            <ExpertCard name="Chris Ekpenyong Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/199/photos/13.jpg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/199/photos/10.jpg"}/>
+            <ExpertCard name="J.T. Akpabio Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/199/photos/10.jpg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/199/photos/8.jpg"}/>
+            <ExpertCard name="Udo Utuk Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/199/photos/8.jpg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2343/photos/11.jpeg"}/>
+            <ExpertCard name="Emmanuel Bassey Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2343/photos/11.jpeg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2451/photos/2.jpg"}/>
+            <ExpertCard name="Nsiri Udoeyop Str" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2451/photos/2.jpg"}/>
           </div>
           <div className="p-2">
-            <ExpertCard name="" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2451/photos/7.jpg"}/>
+            <ExpertCard name="Bassey Ave" linkedin="" contact="" img={"https://www.galleryestate.net/storage/properties/2451/photos/7.jpg"}/>
           </div>
         </div>
     
